@@ -316,7 +316,7 @@ body.sidenav-toggled #mainNav.static-top #sidenavToggler i {
   display: inline-block;
   vertical-align: middle;
   color: white;
-  font-size: 90px;
+  font-size: 80px;
   font-weight: bold;
   margin-left: 10px; /* 이미지와 글자 사이 여백 조절 */
 }
@@ -382,21 +382,27 @@ body.sidenav-toggled .navbar-sidenav-tooltip.show {
 }
 
 #mainNav.navbar-dark .navbar-collapse .navbar-sidenav .nav-link-collapse:after {/*리스트 옆 화살표*/
-  color: #0455a5;
+  color: yellowgreen;
 }
 
 #mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item > .nav-link { /*마우스 안갖다 댈떄 글자색*/
-  color: rgb(85, 196, 0);
+  color: white;
 }
 
 #mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item > .nav-link:hover { /*마우스 갖다 댈때 글자색*/
-  color: #720e34;
+  color: yellowgreen;
 }
 
 #mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level > li > a, /*리스트 밑 요소  글자색*/
 #mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item .sidenav-third-level > li > a {
-  color: rgb(2, 123, 145);
+  color: white;
 }
+
+#mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level > li > a:hover, /*리스트 밑 요소  글자색 (마우스 올릴 때:hover)*/
+#mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item .sidenav-third-level > li > a:hover {
+  color: yellowgreen;
+}
+
 /*
 #mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level > li > a:focus, #mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level > li > a:hover,
 #mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item .sidenav-third-level > li > a:focus,
