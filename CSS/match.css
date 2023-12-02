@@ -41,7 +41,7 @@ body.fixed-nav {
   color: white;
 }
 
-.scroll-to-top:hover {
+.scroll-to-top:hover { /*스타트 부트스랩 쪽 배경색*/
   background: #343a40;
 }
 
@@ -234,7 +234,7 @@ body.fixed-nav {
 }
 
 #mainNav.fixed-top.navbar-light .sidenav-toggler {
-  background-color: #dee2e6;
+  background-color: #e0dee6;
 }
 
 #mainNav.fixed-top.navbar-light .sidenav-toggler a i {
@@ -278,10 +278,61 @@ body.sidenav-toggled #mainNav.static-top #sidenavToggler i {
   filter: FlipH;
   -ms-filter: 'FlipH';
 }
+.newsfeed {
+  color: #ffffff;
+}
+.newsfeedhr {
+  background-color: #ffffff;
+}
+.breadcrumb {
+  background-color: #ffffff;
+}
 
 .content-wrapper {
-  overflow-x: hidden;
-  background: white;
+  background: linear-gradient(-40deg, #291724, #7b2261, #081832, #50285d, #1b5e4e); /* 그라데이션 색상을 여기에 추가 */
+  min-height: calc(100vh - 56px);
+  padding-top: 1rem;
+}
+
+/* content-wrapper 내부에 있는 이미지에 대한 스타일 */
+.content-wrapper img {
+  width: 30%; /* 이미지의 폭 */
+  height: auto;
+  display: block;
+  margin: 10px auto; /* 위아래 여백을 20px로 설정 */
+}
+
+/* 새로운 클래스 .dashboard-image에 대한 스타일 */
+.dashboard-image {
+  display: inline-block;
+  vertical-align: middle;
+}
+.image-container {
+  text-align: center;
+  margin: 180px 0; /* 이미지와 글자 위아래 여백 조절 */
+}
+
+.overlay-text {
+  display: inline-block;
+  vertical-align: middle;
+  color: white;
+  font-size: 90px;
+  font-weight: bold;
+  margin-left: 10px; /* 이미지와 글자 사이 여백 조절 */
+}
+.overlay-text2 {
+  vertical-align: middle;
+  color: rgb(134, 134, 134);
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.overlay-text3 {
+  vertical-align: middle;
+  color: rgb(134, 134, 134);
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 10px;
 }
 
 @media (min-width: 992px) {
@@ -330,76 +381,76 @@ body.sidenav-toggled .navbar-sidenav-tooltip.show {
   display: flex;
 }
 
-#mainNav.navbar-dark .navbar-collapse .navbar-sidenav .nav-link-collapse:after {
-  color: #868e96;
+#mainNav.navbar-dark .navbar-collapse .navbar-sidenav .nav-link-collapse:after {/*리스트 옆 화살표*/
+  color: #0455a5;
 }
 
-#mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item > .nav-link {
-  color: #868e96;
+#mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item > .nav-link { /*마우스 안갖다 댈떄 글자색*/
+  color: rgb(85, 196, 0);
 }
 
-#mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item > .nav-link:hover {
-  color: #adb5bd;
+#mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item > .nav-link:hover { /*마우스 갖다 댈때 글자색*/
+  color: #720e34;
 }
 
-#mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level > li > a,
+#mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level > li > a, /*리스트 밑 요소  글자색*/
 #mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item .sidenav-third-level > li > a {
-  color: #868e96;
+  color: rgb(2, 123, 145);
 }
-
+/*
 #mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level > li > a:focus, #mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level > li > a:hover,
 #mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item .sidenav-third-level > li > a:focus,
 #mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item .sidenav-third-level > li > a:hover {
-  color: #adb5bd;
-}
+  color: rgb(178, 4, 190);
+} 
 
 #mainNav.navbar-dark .navbar-collapse .navbar-nav > .nav-item.dropdown > .nav-link:after {
-  color: #adb5bd;
-}
+  color: rgb(182, 179, 8);
+} */
 
 @media (min-width: 992px) {
-  #mainNav.navbar-dark .navbar-collapse .navbar-sidenav {
+  #mainNav.navbar-dark .navbar-collapse .navbar-sidenav { /* 메뉴 선택 배경색*/
     background: #343a40;
   }
   #mainNav.navbar-dark .navbar-collapse .navbar-sidenav li.active a {
     color: white !important;
-    background-color: #495057;
+    background-color: #574956;
   }
   #mainNav.navbar-dark .navbar-collapse .navbar-sidenav li.active a:focus, #mainNav.navbar-dark .navbar-collapse .navbar-sidenav li.active a:hover {
     color: white;
   }
   #mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level,
   #mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item .sidenav-third-level {
-    background: #343a40;
+    background: #40343f;
   }
 }
 
-#mainNav.navbar-light .navbar-collapse .navbar-sidenav .nav-link-collapse:after {
-  color: rgba(0, 0, 0, 0.5);
+#mainNav.navbar-light .navbar-collapse .navbar-sidenav .nav-link-collapse:after { /* menulevel list 밑쪽 컬러*/
+  color: rgba(125, 0, 0, 0.5);
 }
 
-#mainNav.navbar-light .navbar-collapse .navbar-sidenav > .nav-item > .nav-link {
-  color: rgba(0, 0, 0, 0.5);
+/* #mainNav.navbar-light .navbar-collapse .navbar-sidenav > .nav-item > .nav-link {
+  color: rgba(0, 125, 0, 0.5);
 }
 
 #mainNav.navbar-light .navbar-collapse .navbar-sidenav > .nav-item > .nav-link:hover {
   color: rgba(0, 0, 0, 0.7);
-}
+} 
 
 #mainNav.navbar-light .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level > li > a,
 #mainNav.navbar-light .navbar-collapse .navbar-sidenav > .nav-item .sidenav-third-level > li > a {
   color: rgba(0, 0, 0, 0.5);
-}
+} 
 
 #mainNav.navbar-light .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level > li > a:focus, #mainNav.navbar-light .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level > li > a:hover,
 #mainNav.navbar-light .navbar-collapse .navbar-sidenav > .nav-item .sidenav-third-level > li > a:focus,
 #mainNav.navbar-light .navbar-collapse .navbar-sidenav > .nav-item .sidenav-third-level > li > a:hover {
   color: rgba(0, 0, 0, 0.7);
-}
+} 
 
 #mainNav.navbar-light .navbar-collapse .navbar-nav > .nav-item.dropdown > .nav-link:after {
   color: rgba(0, 0, 0, 0.5);
-}
+} */
 
 @media (min-width: 992px) {
   #mainNav.navbar-light .navbar-collapse .navbar-sidenav {
@@ -461,7 +512,7 @@ footer.sticky-footer {
   bottom: 0;
   width: 100%;
   height: 56px;
-  background-color: #e9ecef;
+  background-color: #eee9ef;
   line-height: 55px;
 }
 
