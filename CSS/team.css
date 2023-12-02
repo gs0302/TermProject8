@@ -46,7 +46,7 @@ body.fixed-nav {
 }
 
 .scroll-to-top i {
-  font-weight: 800;
+  font-weight: 800; 
 }
 
 .smaller {
@@ -227,6 +227,7 @@ body.fixed-nav {
 
 #mainNav.fixed-top.navbar-dark .sidenav-toggler {
   background-color: #212529;
+  
 }
 
 #mainNav.fixed-top.navbar-dark .sidenav-toggler a i {
@@ -240,6 +241,7 @@ body.fixed-nav {
 #mainNav.fixed-top.navbar-light .sidenav-toggler a i {
   color: rgba(0, 0, 0, 0.5);
 }
+
 
 body.sidenav-toggled #mainNav.fixed-top .sidenav-toggler {
   overflow-x: hidden;
@@ -293,6 +295,8 @@ body.sidenav-toggled #mainNav.static-top #sidenavToggler i {
   min-height: calc(100vh - 56px);
   padding-top: 1rem;
 }
+
+
 
 /* content-wrapper 내부에 있는 이미지에 대한 스타일 */
 .content-wrapper img {
