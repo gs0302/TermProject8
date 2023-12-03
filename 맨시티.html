@@ -156,9 +156,9 @@
       <div class="card mb-3">
         <div class="card-header">
           <i class="fa fa-area-chart"></i> season FC/2023-24, 프리미어 리그
-          <button onclick="changeLineChart(0)">점유율(%)</button>
-          <button onclick="changeLineChart(1)">슈팅</button>
-          <button onclick="changeLineChart(2)">경고+퇴장</button>
+          <button class="btt1" onclick="changeLineChart(0)">점유율(%)</button>
+          <button class="btt2" onclick="changeLineChart(1)">슈팅</button>
+          <button class="btt3" onclick="changeLineChart(2)">경고+퇴장</button>
         </div>
         <div class="card-body">
           <canvas id="myAreaChart" width="100%" height="30"></canvas>
@@ -178,18 +178,9 @@
                   <canvas id="myBarChart" width="100" height="50"></canvas>
                 </div>
                 <div class="col-sm-4 text-center my-auto">
-                  <button onclick="changeBarChart(0)">스코어</button>
-                  <button onclick="changeBarChart(1)">승률</button>
-                  <button onclick="changeBarChart(2)">리그 순위</button>
-                  <hr>
-                  <div class="h4 mb-0 text-primary">$34,693</div>
-                  <div class="small text-muted">YTD Revenue</div>
-                  <hr>
-                  <div class="h4 mb-0 text-warning">$18,474</div>
-                  <div class="small text-muted">YTD Expenses</div>
-                  <hr>
-                  <div class="h4 mb-0 text-success">$16,219</div>
-                  <div class="small text-muted">YTD Margin</div>
+                  <button class="btt4" onclick="changeBarChart(0)">스코어</button><br><br>
+                  <button class="btt5" onclick="changeBarChart(1)">승률</button><br><br>
+                  <button class="btt6" onclick="changeBarChart(2)">리그 순위</button>
                 </div>
               </div>
             </div>
@@ -347,7 +338,7 @@
 <script src='https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.16/js/dataTables.bootstrap4.js'></script><script  src="./JS/team.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.16/js/dataTables.bootstrap4.js'></script><script  src="./JS/맨시티.js"></script>
 
 </body>
 </html>

@@ -155,10 +155,10 @@
       <!-- Area Chart Example 값수정 할것 승패(승률 = 경기당 승률, ++전문가의 예상확률(?)) .-->
       <div class="card mb-3">
         <div class="card-header">
-          <i class="fa fa-area-chart"></i> season FC/2023-24, 리그 1
-          <button onclick="changeLineChart(0)">점유율(%)</button>
-          <button onclick="changeLineChart(1)">슈팅</button>
-          <button onclick="changeLineChart(2)">경고+퇴장</button>
+          <i class="fa fa-area-chart"></i> season FC/2023-24, 메이저 리그 사커
+          <button class="btt1" onclick="changeLineChart(0)">점유율(%)</button>
+          <button class="btt2" onclick="changeLineChart(1)">슈팅</button>
+          <button class="btt3" onclick="changeLineChart(2)">경고+퇴장</button>
         </div>
         <div class="card-body">
           <canvas id="myAreaChart" width="100%" height="30"></canvas>
@@ -170,7 +170,7 @@
           <!-- Example Bar Chart Card 골(단순골, +상대가넣은골, +우리팀골/상대팀골)는 그래프로 표시 -->
           <div class="card mb-3">
             <div class="card-header">
-              <i class="fa fa-bar-chart"></i> season FC/2023-24, 리그 1
+              <i class="fa fa-bar-chart"></i> season FC/2023-24, 메이저 리그 사커 
             </div>
             <div class="card-body">
               <div class="row">
@@ -178,18 +178,9 @@
                   <canvas id="myBarChart" width="100" height="50"></canvas>
                 </div>
                 <div class="col-sm-4 text-center my-auto">
-                  <button onclick="changeBarChart(0)">스코어</button>
-                  <button onclick="changeBarChart(1)">승률</button>
-                  <button onclick="changeBarChart(2)">리그 순위</button>
-                  <hr>
-                  <div class="h4 mb-0 text-primary">$34,693</div>
-                  <div class="small text-muted">YTD Revenue</div>
-                  <hr>
-                  <div class="h4 mb-0 text-warning">$18,474</div>
-                  <div class="small text-muted">YTD Expenses</div>
-                  <hr>
-                  <div class="h4 mb-0 text-success">$16,219</div>
-                  <div class="small text-muted">YTD Margin</div>
+                  <button class="btt4" onclick="changeBarChart(0)">스코어</button> <br><br>
+                  <button class="btt5" onclick="changeBarChart(1)">승률</button> <br><br>
+                  <button class="btt6" onclick="changeBarChart(2)">리그 순위</button>
                 </div>
               </div>
             </div>
@@ -205,45 +196,45 @@
           <div class="card-columns">
             <!-- Example Social Card-->
             <div class="card mb-3">
-              <a href="https://www.goal.com/kr/%EB%89%B4%EC%8A%A4/%E1%84%91%E1%85%A1%E1%84%85%E1%85%A1%E1%84%8B%E1%85%A9-%E1%84%87%E1%85%A9%E1%84%82%E1%85%A2%E1%84%80%E1%85%A9-%E1%84%89%E1%85%B2%E1%84%91%E1%85%A5%E1%84%89%E1%85%B3%E1%84%90%E1%85%A1-%E1%84%83%E1%85%A6%E1%84%85%E1%85%A7%E1%84%8B%E1%85%A9%E1%86%AF%E1%84%81%E1%85%A1--%E1%84%85%E1%85%B5%E1%84%87%E1%85%A5%E1%84%91%E1%85%AE%E1%86%AF-%E1%84%86%E1%85%B5%E1%84%8E%E1%85%B5%E1%86%AB-%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%A5%E1%86%A8%E1%84%89%E1%85%A5%E1%86%AF-%E1%84%84%E1%85%A5%E1%84%8B%E1%85%A9%E1%86%AF%E1%84%85%E1%85%A1/blt8915a3ee32f4863b">
-                <img class="card-img-top img-fluid w-100" src="./img/news/파생뉴스1.webp" alt="" />
+              <a href="https://www.intermiamicf.com/news/inter-miami-cf-to-face-el-salvador-national-team-during-2024-preseason">
+                <img class="card-img-top img-fluid w-100" src="./img/news/인터뉴스1.png" alt="" />
               </a>
               <div class="card-body">
                 <h6 class="card-title mb-1">
-                  <a href="https://www.goal.com/kr/%EB%89%B4%EC%8A%A4/%E1%84%91%E1%85%A1%E1%84%85%E1%85%A1%E1%84%8B%E1%85%A9-%E1%84%87%E1%85%A9%E1%84%82%E1%85%A2%E1%84%80%E1%85%A9-%E1%84%89%E1%85%B2%E1%84%91%E1%85%A5%E1%84%89%E1%85%B3%E1%84%90%E1%85%A1-%E1%84%83%E1%85%A6%E1%84%85%E1%85%A7%E1%84%8B%E1%85%A9%E1%86%AF%E1%84%81%E1%85%A1--%E1%84%85%E1%85%B5%E1%84%87%E1%85%A5%E1%84%91%E1%85%AE%E1%86%AF-%E1%84%86%E1%85%B5%E1%84%8E%E1%85%B5%E1%86%AB-%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%A5%E1%86%A8%E1%84%89%E1%85%A5%E1%86%AF-%E1%84%84%E1%85%A5%E1%84%8B%E1%85%A9%E1%86%AF%E1%84%85%E1%85%A1/blt8915a3ee32f4863b">파라오 보내고 ‘슈퍼스타’ 데려올까...리버풀 ‘미친 이적설’ 떠올라</a>
+                  <a href="https://www.intermiamicf.com/news/inter-miami-cf-to-face-el-salvador-national-team-during-2024-preseason">인터 마이애미 CF, 2024년 프리시즌 동안 엘살바도르 국가대표팀과 대결</a>
                 </h6>
 
               </div>
             </div>
             <!-- Example Social Card-->
             <div class="card mb-3">
-              <a href="https://www.goal.com/kr/%EB%89%B4%EC%8A%A4/%E1%84%8B%E1%85%A8%E1%84%89%E1%85%A1%E1%86%BC-%E1%84%83%E1%85%B1%E1%84%8B%E1%85%A5%E1%87%81%E1%84%80%E1%85%A9-%E1%84%89%E1%85%A5%E1%86%AB%E1%84%87%E1%85%A1%E1%86%AF-%E1%84%8E%E1%85%AE%E1%86%AF%E1%84%8C%E1%85%A5%E1%86%AB-%E1%84%8B%E1%85%B5%E1%84%80%E1%85%A1%E1%86%BC%E1%84%8B%E1%85%B5%E1%86%AB-82%E1%84%87%E1%85%AE%E1%86%AB%E1%84%80%E1%85%A1%E1%86%AB-%E1%84%92%E1%85%AA%E1%86%AF%E1%84%8B%E1%85%A3%E1%86%A8--%E1%84%8B%E1%85%B3%E1%86%B7%E1%84%87%E1%85%A1%E1%84%91%E1%85%A6-%E1%84%83%E1%85%A9%E1%86%BC%E1%84%8C%E1%85%A5%E1%86%B7%E1%84%80%E1%85%A9%E1%86%AF-psg-%E1%84%82%E1%85%B2%E1%84%8F%E1%85%A2%E1%84%89%E1%85%B3%E1%86%AF%E1%84%80%E1%85%AA-%E1%84%80%E1%85%A1%E1%84%81%E1%85%A1%E1%84%89%E1%85%B3%E1%84%85%E1%85%A9-%E1%84%86%E1%85%AE%E1%84%89%E1%85%B3%E1%86%BC%E1%84%87%E1%85%AE/blt7d3327e64b379604">
-                <img class="card-img-top img-fluid w-100" src="./img/news/파생뉴스2.webp" alt="" />
+              <a href="https://www.intermiamicf.com/news/inter-miami-cf-sells-out-of-2024-season-tickets-club-announces-single-match-tick">
+                <img class="card-img-top img-fluid w-100" src="./img/news/인터뉴스2.png" alt="" />
               </a>
               <div class="card-body">
-                <h6 class="card-title mb-1"><a href="hhttps://www.goal.com/kr/%EB%89%B4%EC%8A%A4/%E1%84%8B%E1%85%A8%E1%84%89%E1%85%A1%E1%86%BC-%E1%84%83%E1%85%B1%E1%84%8B%E1%85%A5%E1%87%81%E1%84%80%E1%85%A9-%E1%84%89%E1%85%A5%E1%86%AB%E1%84%87%E1%85%A1%E1%86%AF-%E1%84%8E%E1%85%AE%E1%86%AF%E1%84%8C%E1%85%A5%E1%86%AB-%E1%84%8B%E1%85%B5%E1%84%80%E1%85%A1%E1%86%BC%E1%84%8B%E1%85%B5%E1%86%AB-82%E1%84%87%E1%85%AE%E1%86%AB%E1%84%80%E1%85%A1%E1%86%AB-%E1%84%92%E1%85%AA%E1%86%AF%E1%84%8B%E1%85%A3%E1%86%A8--%E1%84%8B%E1%85%B3%E1%86%B7%E1%84%87%E1%85%A1%E1%84%91%E1%85%A6-%E1%84%83%E1%85%A9%E1%86%BC%E1%84%8C%E1%85%A5%E1%86%B7%E1%84%80%E1%85%A9%E1%86%AF-psg-%E1%84%82%E1%85%B2%E1%84%8F%E1%85%A2%E1%84%89%E1%85%B3%E1%86%AF%E1%84%80%E1%85%AA-%E1%84%80%E1%85%A1%E1%84%81%E1%85%A1%E1%84%89%E1%85%B3%E1%84%85%E1%85%A9-%E1%84%86%E1%85%AE%E1%84%89%E1%85%B3%E1%86%BC%E1%84%87%E1%85%AE/blt7d3327e64b379604">예상 뒤엎고 ‘선발 출전’ 이강인 82분간 활약…‘음바페 동점골’ PSG, 뉴캐슬과 가까스로 무승부</a></h6>
+                <h6 class="card-title mb-1"><a href="https://www.intermiamicf.com/news/inter-miami-cf-sells-out-of-2024-season-tickets-club-announces-single-match-tick">인터 마이애미 CF, 2024년 시즌 티켓 매진… 클럽, 제한된 남은 경기 티켓에 대한 단일 경기 티켓 사전 판매 세부 정보 발표</a></h6>
 
               </div>
             </div>
             <!-- Example Social Card-->
             <div class="card mb-3">
-              <a href="https://www.goal.com/kr/%EB%89%B4%EC%8A%A4/%E1%84%91%E1%85%A1%E1%84%85%E1%85%B5-%E1%84%89%E1%85%A2%E1%86%BC%E1%84%8C%E1%85%A6%E1%84%85%E1%85%B3%E1%84%86%E1%85%A2%E1%86%BC%E1%84%80%E1%85%AA-%E1%84%83%E1%85%A9%E1%86%BC%E1%84%92%E1%85%A2%E1%86%BC-%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%E1%84%80%E1%85%A1%E1%86%AB%E1%84%83%E1%85%A1--%E1%84%8B%E1%85%B5%E1%86%B8%E1%84%8C%E1%85%B5-%E1%84%83%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AB%E1%84%8C%E1%85%A5%E1%86%AB-%E2%86%92%E1%84%8C%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%AB-%E1%84%80%E1%85%A7%E1%86%BC%E1%84%8C%E1%85%A2%E1%86%BC-%E1%84%8C%E1%85%A1%E1%84%89%E1%85%B5%E1%86%AB/blt011499b3b9735de9">
-                <img class="card-img-top img-fluid w-100" src="./img/news/파생뉴스3.webp" alt="" />
+              <a href="https://www.intermiamicf.com/news/international-duty-inter-miami-cf-in-action-during-november-international-window">
+                <img class="card-img-top img-fluid w-100" src="./img/news/인터뉴스3.webp" alt="" />
               </a>
               <div class="card-body">
                 <h6 class="card-title mb-1">
-                  <a href="https://www.goal.com/kr/%EB%89%B4%EC%8A%A4/%E1%84%91%E1%85%A1%E1%84%85%E1%85%B5-%E1%84%89%E1%85%A2%E1%86%BC%E1%84%8C%E1%85%A6%E1%84%85%E1%85%B3%E1%84%86%E1%85%A2%E1%86%BC%E1%84%80%E1%85%AA-%E1%84%83%E1%85%A9%E1%86%BC%E1%84%92%E1%85%A2%E1%86%BC-%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%E1%84%80%E1%85%A1%E1%86%AB%E1%84%83%E1%85%A1--%E1%84%8B%E1%85%B5%E1%86%B8%E1%84%8C%E1%85%B5-%E1%84%83%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AB%E1%84%8C%E1%85%A5%E1%86%AB-%E2%86%92%E1%84%8C%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%AB-%E1%84%80%E1%85%A7%E1%86%BC%E1%84%8C%E1%85%A2%E1%86%BC-%E1%84%8C%E1%85%A1%E1%84%89%E1%85%B5%E1%86%AB/blt011499b3b9735de9">파리 생제르맹과 동행 이어간다…입지 ‘대반전’→주전 경쟁 자신</a>
+                  <a href="https://www.intermiamicf.com/news/international-duty-inter-miami-cf-in-action-during-november-international-window">국제 임무: 11월 국제 기간 동안 활동하는 인터 마이애미 CF</a>
                 </h6>
               </div>
             </div>
             <!-- Example Social Card-->
             <div class="card mb-3">
-              <a href="https://www.goal.com/kr/%EB%89%B4%EC%8A%A4/goal-%E1%84%85%E1%85%B5%E1%84%87%E1%85%B2--5%E1%84%80%E1%85%A9%E1%86%AF-%E1%84%86%E1%85%A9%E1%86%AF%E1%84%8B%E1%85%A1%E1%84%8E%E1%85%B5%E1%86%AB-psg-%E1%84%8B%E1%85%A1%E1%86%AB%E1%84%87%E1%85%A1%E1%86%BC%E1%84%8B%E1%85%A6%E1%84%89%E1%85%A5-as-%E1%84%86%E1%85%A9%E1%84%82%E1%85%A1%E1%84%8F%E1%85%A9-5-2-%E1%84%80%E1%85%A7%E1%86%A8%E1%84%91%E1%85%A1--%E1%84%86%E1%85%A5%E1%86%AB-%E1%84%80%E1%85%B5%E1%86%AF-%E1%84%83%E1%85%A1%E1%86%AF%E1%84%85%E1%85%A7%E1%84%8B%E1%85%A9%E1%86%AB-%E1%84%8B%E1%85%B5%E1%84%80%E1%85%A1%E1%86%BC%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%8B%E1%85%B3%E1%86%AB-%E1%84%80%E1%85%A7%E1%86%AF%E1%84%8C%E1%85%A1%E1%86%BC/blt86aa925dc58581ee">
-                <img class="card-img-top img-fluid w-100" src="./img/news/파생뉴스4.webp" alt="" />
+              <a href="https://www.intermiamicf.com/news/inter-miami-cf-team-store-at-drv-pnk-stadium-announces-pink-black-friday-sale-de">
+                <img class="card-img-top img-fluid w-100" src="./img/news/인터뉴스4.png" alt="" />
               </a>
               <div class="card-body">
                 <h6 class="card-title mb-1">
-                  <a href="https://www.goal.com/kr/%EB%89%B4%EC%8A%A4/goal-%E1%84%85%E1%85%B5%E1%84%87%E1%85%B2--5%E1%84%80%E1%85%A9%E1%86%AF-%E1%84%86%E1%85%A9%E1%86%AF%E1%84%8B%E1%85%A1%E1%84%8E%E1%85%B5%E1%86%AB-psg-%E1%84%8B%E1%85%A1%E1%86%AB%E1%84%87%E1%85%A1%E1%86%BC%E1%84%8B%E1%85%A6%E1%84%89%E1%85%A5-as-%E1%84%86%E1%85%A9%E1%84%82%E1%85%A1%E1%84%8F%E1%85%A9-5-2-%E1%84%80%E1%85%A7%E1%86%A8%E1%84%91%E1%85%A1--%E1%84%86%E1%85%A5%E1%86%AB-%E1%84%80%E1%85%B5%E1%86%AF-%E1%84%83%E1%85%A1%E1%86%AF%E1%84%85%E1%85%A7%E1%84%8B%E1%85%A9%E1%86%AB-%E1%84%8B%E1%85%B5%E1%84%80%E1%85%A1%E1%86%BC%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%8B%E1%85%B3%E1%86%AB-%E1%84%80%E1%85%A7%E1%86%AF%E1%84%8C%E1%85%A1%E1%86%BC/blt86aa925dc58581ee">[GOAL 리뷰] ‘5골’ 몰아친 PSG, 안방에서 AS 모나코 5-2 격파...먼 길 달려온 이강인은 결장</a>
+                  <a href="https://www.intermiamicf.com/news/inter-miami-cf-team-store-at-drv-pnk-stadium-announces-pink-black-friday-sale-de">DRV PNK 스타디움의 인터 마이애미 CF 팀 스토어, 핑크 & 블랙 프라이데이 세일 세부 정보 및 업데이트된 휴일 시간 발표</a>
                 </h6>
 
               </div>
@@ -280,31 +271,31 @@
             <div class="list-group list-group-flush small">
               <a class="list-group-item list-group-item-action" href="#">
                 <div class="media">
-                  <img class="d-flex mr-3 rounded-circle" src="./img/pp/파생마르키.webp" alt="">
+                  <img class="d-flex mr-3 rounded-circle" src="./img/pp/인터메시.webp" alt="">
                   <div class="media-body">
-                    <strong>Marquinhos</strong> <br>
+                    <strong>Lionel Messi</strong> <br>
                     Captian <br><br>
-                    <div class="text-muted smaller">센터백, 수비형 미드필더</div>
+                    <div class="text-muted smaller">공격수</div>
                   </div>
                 </div>
               </a>
               <a class="list-group-item list-group-item-action" href="#">
                 <div class="media">
-                  <img class="d-flex mr-3 rounded-circle" src="./img/pp/파생음바페.webp" alt="">
+                  <img class="d-flex mr-3 rounded-circle" src="./img/pp/인터예들린.webp" alt="">
                   <div class="media-body">
-                    <strong>Kylian Mbappé</strong> <br>
+                    <strong>Deandre Yedlin</strong> <br>
                     Vice Captain <br><br>
-                    <div class="text-muted smaller">윙어, 스트라이커</div>
+                    <div class="text-muted smaller">라이트백</div>
                   </div>
                 </div>
               </a>
               <a class="list-group-item list-group-item-action" href="#">
                 <div class="media">
-                  <img class="d-flex mr-3 rounded-circle" src="./img/pp/파생이강인.webp" alt="">
+                  <img class="d-flex mr-3 rounded-circle" src="./img/pp/인터캘린더.webp" alt="">
                   <div class="media-body">
-                    <strong>Lee Kang-in</strong> <br>
+                    <strong>Drake Callender</strong> <br>
                     player <br><br>
-                    <div class="text-muted smaller">공격형 미드필더, 중앙 미드필더, 윙어</div>
+                    <div class="text-muted smaller">골키퍼</div>
                   </div>
                 </div>
               </a>
@@ -320,7 +311,7 @@
                   </div>
                 </div>
               </a> -->
-              <a class="list-group-item list-group-item-action" href="https://www.premierleague.com/clubs/21/Tottenham-Hotspur/squad?se=578">View all player...</a>
+              <a class="list-group-item list-group-item-action" href="https://www.intermiamicf.com/club/roster">View all player...</a>
             </div>
             <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
           </div>
@@ -331,7 +322,7 @@
     <footer class="sticky-footer">
       <div class="container">
         <div class="text-center">
-          <small>League 1</small>
+          <small>MLS</small>
         </div>
       </div>
     </footer>
@@ -347,7 +338,7 @@
 <script src='https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.16/js/dataTables.bootstrap4.js'></script><script  src="./JS/team.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.16/js/dataTables.bootstrap4.js'></script><script  src="./JS/인터마이.js"></script>
 
 </body>
 </html>
