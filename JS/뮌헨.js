@@ -14,26 +14,26 @@ var myBarChart;
 var lineDatasets = [
     {
         label: "점유율(%)",
-        data: [58.7, 79.5, 67.9, 68.4, 57.4, 68.1, 51, 54.5, 60.5, 64.8, 54.8, 60],
+        data: [72.4, 61, 65, 51.7, 61.2, 65.3, 70, 62, 53.9, 50.4, 72.5, 68.6],
         backgroundColor: "rgba(255, 99, 132, 1)",
         borderColor: "rgba(255, 99, 132, 1)",
-        xAxisLabels: ["8/20", "8/27", "9/2", "9/16", "9/23", "9/30", "10/9", "10/21", "10/30", "11/5","11/13", "11/25"],
+        xAxisLabels: ["8/19", "8/28", "9/3", "9/16", "9/23", "10/1", "10/9", "10/22", "10/28", "11/5","11/11", "11/25"],
         yAxisMax: 100,
     },
     {
         label: "슈팅",
-        data: [14, 30, 7, 29, 7, 23, 4, 10, 21, 21, 17, 16],
+        data: [25, 19, 25, 16, 26, 11, 21, 13, 29, 14, 19, 21],
         backgroundColor: "rgba(2,117,216,1)",
         borderColor: "rgba(2,117,216,1)",
-        xAxisLabels: ["8/20", "8/27", "9/2", "9/16", "9/23", "9/30", "10/9", "10/21", "10/30", "11/5","11/13", "11/25"],
+        xAxisLabels: ["8/19", "8/28", "9/3", "9/16", "9/23", "10/1", "10/9", "10/22", "10/28", "11/5","11/11", "11/25"],
         yAxisMax: 20,
     },
     {
         label: "경고+퇴장",
-        data: [1, 0, 2, 2, 3, 5, 3, 2, 2, 1, 5, 1],
+        data: [1, 1, 2, 0, 0, 5, 1, 2, 1, 2, 1, 1],
         backgroundColor: "rgba(75, 192, 192, 1)",
         borderColor: "rgba(75, 192, 192, 1)",
-        xAxisLabels: ["8/20", "8/27", "9/2", "9/16", "9/23", "9/30", "10/9", "10/21", "10/30", "11/5","11/13", "11/25"],
+        xAxisLabels: ["8/19", "8/28", "9/3", "9/16", "9/23", "10/1", "10/9", "10/22", "10/28", "11/5","11/11", "11/25"],
         yAxisMax: 10,
     },
 ];
@@ -44,7 +44,7 @@ var barDatasets = [
         label: "Dataset 1", // 스코어 3:1 이면 +2 , 이겼으면 
         backgroundColor: "rgba(2,117,216,1)",
         borderColor: "rgba(2,117,216,1)",
-        data: [1, 1, 4, 2, 2, -1, -1, 1, 3, 5, 0, 0],
+        data: [4, 2, 1, 0, 7, 0, 3, 2, 8, 4, 2, 1],
         yAxisMax: 5,
     },
     {
@@ -58,7 +58,7 @@ var barDatasets = [
         label: "Dataset 3", // 리그 순위 
         backgroundColor: "rgba(75, 192, 192, 1)",
         borderColor: "rgba(75, 192, 192, 1)",
-        data: [2, 1, 1, 1, 1, 1, 3, 2, 3, 1, 1, 2],
+        data: [2, 2, 2, 2, 1, 3, 3, 3, 2, 2, 2, 2],
         yAxisMax: 20,
     },
 ];
@@ -129,7 +129,7 @@ function initializeBarChart() {
     myBarChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: ["8/20", "8/27", "9/2", "9/16", "9/23", "9/30", "10/9", "10/21", "10/30", "11/5","11/13", "11/25"],
+            labels: ["8/19", "8/28", "9/3", "9/16", "9/23", "10/1", "10/9", "10/22", "10/28", "11/5","11/11", "11/25"],
             datasets: [barDatasets[0]], // Initial dataset
         },
         options: {
@@ -205,7 +205,7 @@ $(document).ready(function() {
   });
   // Scroll to top button appear
   $(document).scroll(function() {
-    var scrollDistance = $(this).scrollTop();
+    var scrollDistance = $(this).scrollTop(); 
     if (scrollDistance > 100) {
       $('.scroll-to-top').fadeIn();
     } else {
