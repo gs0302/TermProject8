@@ -156,9 +156,9 @@
       <div class="card mb-3">
         <div class="card-header">
           <i class="fa fa-area-chart"></i> season FC/2023-24, 프리미어 리그
-          <button onclick="changeLineChart(0)">점유율(%)</button>
-          <button onclick="changeLineChart(1)">슈팅</button>
-          <button onclick="changeLineChart(2)">경고+퇴장</button>
+          <button style="background: rgba(255, 99, 132, 1); color: white; border-radius: 10%; border: none;" onclick="changeLineChart(0)">점유율(%)</button>
+          <button style="background: rgba(2,117,216,1); color: white; border-radius: 10%; border: none;" onclick="changeLineChart(1)">슈팅</button>
+          <button style="background: rgba(75, 192, 192, 1); color: white; border-radius: 10%; border: none;" onclick="changeLineChart(2)">경고+퇴장</button>
         </div>
         <div class="card-body">
           <canvas id="myAreaChart" width="100%" height="30"></canvas>
@@ -178,18 +178,10 @@
                   <canvas id="myBarChart" width="100" height="50"></canvas>
                 </div>
                 <div class="col-sm-4 text-center my-auto">
-                  <button onclick="changeBarChart(0)">스코어</button>
-                  <button onclick="changeBarChart(1)">승률</button>
-                  <button onclick="changeBarChart(2)">리그 순위</button>
-                  <hr>
-                  <div class="h4 mb-0 text-primary">$34,693</div>
-                  <div class="small text-muted">YTD Revenue</div>
-                  <hr>
-                  <div class="h4 mb-0 text-warning">$18,474</div>
-                  <div class="small text-muted">YTD Expenses</div>
-                  <hr>
-                  <div class="h4 mb-0 text-success">$16,219</div>
-                  <div class="small text-muted">YTD Margin</div>
+                  <button style="background: rgba(2,117,216,1); color: white; border-radius: 10%; border: none;" onclick="changeBarChart(0)">스코어</button> <br><br>
+                  <button style="background: rgba(255, 99, 132, 1); color: white; border-radius: 10%; border: none;" onclick="changeBarChart(1)">승률</button> <br><br>
+                  <button style="background: rgba(75, 192, 192, 1); color: white; border-radius: 10%; border: none;" onclick="changeBarChart(2)">리그 순위</button>
+                  
                 </div>
               </div>
             </div>
