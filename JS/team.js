@@ -13,25 +13,28 @@ var myBarChart;
 // Define line chart data for each dataset
 var lineDatasets = [
     {
-        label: "Dataset 1",
-        data: [10000, 30162, 26263, 18394, 18287, 28682, 31274, 33259, 25849, 24159, 32651, 31984, 38451],
-        borderColor: "rgba(2,117,216,1)",
-        xAxisLabels: ["Mar 1", "Mar 2", "Mar 3", "Mar 4", "Mar 5", "Mar 6", "Mar 7", "Mar 8", "Mar 9", "Mar 10", "Mar 11", "Mar 12", "Mar 13"],
-        yAxisMax: 50000,
-    },
-    {
-        label: "Dataset 2",
-        data: [15000, 40162, 36263, 28394, 28287, 38682, 41274, 43259, 35849, 34159, 42651, 41984, 48451],
+        label: "점유율(%)",
+        data: [70, 44, 58, 55, 71, 54, 65, 67, 56, 75.6, 39, 58.4],
+        backgroundColor: "rgba(255, 99, 132, 1)",
         borderColor: "rgba(255, 99, 132, 1)",
-        xAxisLabels: ["Day 1", "Day 2", "Day 3", "Day 4", "Day 5", "Day 6", "Day 7", "Day 8", "Day 9", "Day 10", "Day 11", "Day 12", "Day 13"],
-        yAxisMax: 60000,
+        xAxisLabels: ["8/13", "8/20", "8/26", "9/2", "9/16", "9/24", "10/1", "10/7", "10/24", "10/28","11/7", "11/11"],
+        yAxisMax: 100,
     },
     {
-        label: "Dataset 3",
-        data: [12000, 35162, 32263, 24394, 24287, 34682, 37274, 39259, 31849, 30159, 38651, 37984, 44451],
+        label: "슈팅",
+        data: [18, 17, 17, 20, 28, 13, 24, 15, 15, 10, 8, 6],
+        backgroundColor: "rgba(2,117,216,1)",
+        borderColor: "rgba(2,117,216,1)",
+        xAxisLabels: ["8/13", "8/20", "8/26", "9/2", "9/16", "9/24", "10/1", "10/7", "10/24", "10/28","11/7", "11/11"],
+        yAxisMax: 20,
+    },
+    {
+        label: "경고+퇴장",
+        data: [4, 1, 3, 3, 6, 4, 5, 3, 2, 1, 3, 3],
+        backgroundColor: "rgba(75, 192, 192, 1)",
         borderColor: "rgba(75, 192, 192, 1)",
-        xAxisLabels: ["Jan 1", "Jan 2", "Jan 3", "Jan 4", "Jan 5", "Jan 6", "Jan 7", "Jan 8", "Jan 9", "Jan 10", "Jan 11", "Jan 12", "Jan 13"],
-        yAxisMax: 45000,
+        xAxisLabels: ["8/13", "8/20", "8/26", "9/2", "9/16", "9/24", "10/1", "10/7", "10/24", "10/28","11/7", "11/11"],
+        yAxisMax: 10,
     },
 ];
 
@@ -41,19 +44,22 @@ var barDatasets = [
         label: "Dataset 1",
         backgroundColor: "rgba(2,117,216,1)",
         borderColor: "rgba(2,117,216,1)",
-        data: [4215, 14984, 6251, 17841, 9821, 14984],
+        data: [0, 2, 2, 3, 1, 0, 1, 1, 2, 1, -3, -1,-1],
+        yAxisMax: 5,
     },
     {
-        label: "Dataset 2",
+        label: "(2x 승수 + 무승부 수)/ (2x 플레이한 총 게임 수) x 100",
         backgroundColor: "rgba(255, 99, 132, 1)",
         borderColor: "rgba(255, 99, 132, 1)",
-        data: [2000, 3000, 4000, 5000, 6000, 7000],
+        data: [50.0, 75, 83.3, 87.5, 90.0, 83.3, 85.7, 87.5, 88.8, 90.0, 81.8, 75.0, 69.2],
+        yAxisMax: 100,
     },
     {
         label: "Dataset 3",
         backgroundColor: "rgba(75, 192, 192, 1)",
         borderColor: "rgba(75, 192, 192, 1)",
-        data: [1000, 2000, 3000, 4000, 5000, 6000],
+        data: [9, 6, 3, 2, 2, 4, 2, 1, 1, 1, 2, 4, 5],
+        yAxisMax: 20,
     },
 ];
 
@@ -123,7 +129,7 @@ function initializeBarChart() {
     myBarChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: ["January", "February", "March", "April", "May", "June"],
+            labels: ["8/13", "8/20", "8/26", "9/2", "9/16", "9/24", "10/1", "10/7", "10/24", "10/28","11/7", "11/11", "11/26"],
             datasets: [barDatasets[0]], // Initial dataset
         },
         options: {
@@ -160,10 +166,10 @@ var ctx = document.getElementById("myPieChart");
 var myPieChart = new Chart(ctx, {
   type: 'pie',
   data: {
-    labels: ["Blue", "Red", "Yellow", "Green"],
+    labels: ["Fouls", "Yellow card","Offsides","Red cards"],
     datasets: [{
-      data: [12.21, 15.58, 11.25, 8.32],
-      backgroundColor: ['#007bff', '#dc3545', '#ffc107', '#28a745'],
+      data: [241,75,67, 3],
+      backgroundColor: ['#007bff', '#ffc107', '#28a745','#dc3545'],
     }],
   },
 });
