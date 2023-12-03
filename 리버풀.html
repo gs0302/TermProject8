@@ -91,11 +91,11 @@
           <div class="card text-white bg-primary o-hidden h-100">
             <div class="card-body">
               <div class="card-body-icon">
-                <i class="fa fa-fw fa-comments"></i>
+                <i class="fa fa-fw fa-soccer-ball-o" id="Viewdetail"></i>
               </div>
-              <div class="mr-5">26 New Messages!</div>
+              <div class="mr-5">경기 결과</div>
             </div>
-            <a class="card-footer text-white clearfix small z-1" href="#">
+            <a class="card-footer text-white clearfix small z-1" href="#Viewdetail">
               <span class="float-left">View Details</span>
               <span class="float-right">
                 <i class="fa fa-angle-right"></i>
@@ -107,11 +107,11 @@
           <div class="card text-white bg-warning o-hidden h-100">
             <div class="card-body">
               <div class="card-body-icon">
-                <i class="fa fa-fw fa-list"></i>
+                <i class="fa fa-fw fa-newspaper-o"></i>
               </div>
-              <div class="mr-5">11 New Tasks!</div>
+              <div class="mr-5">뉴스</div>
             </div>
-            <a class="card-footer text-white clearfix small z-1" href="#">
+            <a class="card-footer text-white clearfix small z-1" href="#Newsfd">
               <span class="float-left">View Details</span>
               <span class="float-right">
                 <i class="fa fa-angle-right"></i>
@@ -123,11 +123,11 @@
           <div class="card text-white bg-success o-hidden h-100">
             <div class="card-body">
               <div class="card-body-icon">
-                <i class="fa fa-fw fa-shopping-cart"></i>
+                <i class="fa fa-fw fa-list"></i>
               </div>
-              <div class="mr-5">123 New Orders!</div>
+              <div class="mr-5">선수 명단</div>
             </div>
-            <a class="card-footer text-white clearfix small z-1" href="#">
+            <a class="card-footer text-white clearfix small z-1" href="#feedexp">
               <span class="float-left">View Details</span>
               <span class="float-right">
                 <i class="fa fa-angle-right"></i>
@@ -139,11 +139,11 @@
           <div class="card text-white bg-danger o-hidden h-100">
             <div class="card-body">
               <div class="card-body-icon">
-                <i class="fa fa-fw fa-support"></i>
+                <i class="fa fa-fw fa-warning"></i>
               </div>
-              <div class="mr-5">13 New Tickets!</div>
+              <div class="mr-5">파울</div>
             </div>
-            <a class="card-footer text-white clearfix small z-1" href="#">
+            <a class="card-footer text-white clearfix small z-1" href="#piechardhead">
               <span class="float-left">View Details</span>
               <span class="float-right">
                 <i class="fa fa-angle-right"></i>
@@ -155,22 +155,22 @@
       <!-- Area Chart Example 값수정 할것 승패(승률 = 경기당 승률, ++전문가의 예상확률(?)) .-->
       <div class="card mb-3">
         <div class="card-header">
-          <i class="fa fa-area-chart"></i> Area Chart Example
-          <button onclick="changeLineChart(0)">Dataset1 1</button>
-          <button onclick="changeLineChart(1)">Dataset1 2</button>
-          <button onclick="changeLineChart(2)">Dataset1 3</button>
+          <i class="fa fa-area-chart"></i> season FC/2023-24, 프리미어 리그
+          <button onclick="changeLineChart(0)">점유율(%)</button>
+          <button onclick="changeLineChart(1)">슈팅</button>
+          <button onclick="changeLineChart(2)">경고+퇴장</button>
         </div>
         <div class="card-body">
           <canvas id="myAreaChart" width="100%" height="30"></canvas>
         </div>
-        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+        <div class="card-footer small text-muted">Updated 2023-12-03</div>
       </div>
       <div class="row">
         <div class="col-lg-8">
           <!-- Example Bar Chart Card 골(단순골, +상대가넣은골, +우리팀골/상대팀골)는 그래프로 표시 -->
           <div class="card mb-3">
             <div class="card-header">
-              <i class="fa fa-bar-chart"></i> Bar Chart Example
+              <i class="fa fa-bar-chart"></i> season FC/2023-24, 프리미어 리그
             </div>
             <div class="card-body">
               <div class="row">
@@ -178,9 +178,9 @@
                   <canvas id="myBarChart" width="100" height="50"></canvas>
                 </div>
                 <div class="col-sm-4 text-center my-auto">
-                  <button onclick="changeBarChart(0)">Dataset 1</button>
-                  <button onclick="changeBarChart(1)">Dataset 2</button>
-                  <button onclick="changeBarChart(2)">Dataset 3</button>
+                  <button onclick="changeBarChart(0)">스코어</button>
+                  <button onclick="changeBarChart(1)">승률</button>
+                  <button onclick="changeBarChart(2)">리그 순위</button>
                   <hr>
                   <div class="h4 mb-0 text-primary">$34,693</div>
                   <div class="small text-muted">YTD Revenue</div>
@@ -198,52 +198,52 @@
           <!-- Card Columns Example Social Feed-->
           <div class="mb-0 mt-4">
             <div class="newsfeed">
-              <i class="fa fa-newspaper-o"></i> News Feed
+              <i class="fa fa-newspaper-o" id="Newsfd"></i> News Feed
             </div>
           </div>
           <hr class="newsfeedhr" />
           <div class="card-columns">
             <!-- Example Social Card-->
             <div class="card mb-3">
-              <a href="#">
-                <img class="card-img-top img-fluid w-100" src="https://unsplash.it/700/450?image=610" alt="" />
+              <a href="https://www.goal.com/kr/%EB%89%B4%EC%8A%A4/%E1%84%86%E1%85%A2%E1%86%AB%E1%84%8E%E1%85%A6%E1%84%89%E1%85%B3%E1%84%90%E1%85%A5-%E1%84%89%E1%85%B5%E1%84%90%E1%85%B5-%E1%84%8B%E1%85%A7%E1%86%BC%E1%84%8B%E1%85%B5%E1%86%B8-%E1%84%86%E1%85%A9%E1%86%A8%E1%84%91%E1%85%AD-%E1%84%87%E1%85%A1%E1%84%81%E1%85%AF%E1%86%BB%E1%84%82%E1%85%A1--8%E1%84%89%E1%85%B5%E1%84%8C%E1%85%B3%E1%86%AB-%E1%84%86%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%A6-epl-%E1%84%87%E1%85%A9%E1%86%A8%E1%84%80%E1%85%B1-%E1%84%80%E1%85%A1%E1%84%82%E1%85%B3%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC/blt0caf057c8a31db53">
+                <img class="card-img-top img-fluid w-100" src="./img/news/맨시뉴스1.webp" alt="" />
               </a>
               <div class="card-body">
                 <h6 class="card-title mb-1">
-                  <a href="#">David Miller</a>
+                  <a href="https://www.goal.com/kr/%EB%89%B4%EC%8A%A4/%E1%84%86%E1%85%A2%E1%86%AB%E1%84%8E%E1%85%A6%E1%84%89%E1%85%B3%E1%84%90%E1%85%A5-%E1%84%89%E1%85%B5%E1%84%90%E1%85%B5-%E1%84%8B%E1%85%A7%E1%86%BC%E1%84%8B%E1%85%B5%E1%86%B8-%E1%84%86%E1%85%A9%E1%86%A8%E1%84%91%E1%85%AD-%E1%84%87%E1%85%A1%E1%84%81%E1%85%AF%E1%86%BB%E1%84%82%E1%85%A1--8%E1%84%89%E1%85%B5%E1%84%8C%E1%85%B3%E1%86%AB-%E1%84%86%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%A6-epl-%E1%84%87%E1%85%A9%E1%86%A8%E1%84%80%E1%85%B1-%E1%84%80%E1%85%A1%E1%84%82%E1%85%B3%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC/blt0caf057c8a31db53">맨체스터 시티 영입 목표 바꿨나…8시즌 만에 EPL 복귀 가능성</a>
                 </h6>
 
               </div>
             </div>
             <!-- Example Social Card-->
             <div class="card mb-3">
-              <a href="#">
-                <img class="card-img-top img-fluid w-100" src="https://unsplash.it/700/450?image=180" alt="" />
+              <a href="https://www.goal.com/kr/%EB%89%B4%EC%8A%A4/%E1%84%80%E1%85%AA%E1%84%85%E1%85%B3%E1%84%83%E1%85%B5%E1%84%8B%E1%85%A9%E1%86%AF%E1%84%85%E1%85%A1%E1%84%80%E1%85%A1-%E1%84%80%E1%85%B3%E1%86%A8%E1%84%8E%E1%85%A1%E1%86%AB%E1%84%92%E1%85%A1%E1%86%AB-%E1%84%8E%E1%85%AC%E1%84%80%E1%85%A9%E1%84%8B%E1%85%B4-%E1%84%8B%E1%85%A7%E1%86%BC%E1%84%8B%E1%85%B5%E1%86%B8---%E1%84%80%E1%85%B3%E1%84%8B%E1%85%AA-%E1%84%80%E1%85%A8%E1%84%8B%E1%85%A3%E1%86%A8%E1%84%92%E1%85%A1%E1%86%AB-%E1%84%80%E1%85%A5%E1%86%AB-%E1%84%8B%E1%85%A5%E1%86%B7%E1%84%8E%E1%85%A5%E1%86%BC%E1%84%82%E1%85%A1%E1%86%AB-%E1%84%8B%E1%85%B5%E1%86%AF/blt4c3278efe3f181b8">
+                <img class="card-img-top img-fluid w-100" src="./img/news/맨시뉴스2.webp" alt="" />
               </a>
               <div class="card-body">
-                <h6 class="card-title mb-1"><a href="#">John Smith</a></h6>
+                <h6 class="card-title mb-1"><a href="https://www.goal.com/kr/%EB%89%B4%EC%8A%A4/%E1%84%80%E1%85%AA%E1%84%85%E1%85%B3%E1%84%83%E1%85%B5%E1%84%8B%E1%85%A9%E1%86%AF%E1%84%85%E1%85%A1%E1%84%80%E1%85%A1-%E1%84%80%E1%85%B3%E1%86%A8%E1%84%8E%E1%85%A1%E1%86%AB%E1%84%92%E1%85%A1%E1%86%AB-%E1%84%8E%E1%85%AC%E1%84%80%E1%85%A9%E1%84%8B%E1%85%B4-%E1%84%8B%E1%85%A7%E1%86%BC%E1%84%8B%E1%85%B5%E1%86%B8---%E1%84%80%E1%85%B3%E1%84%8B%E1%85%AA-%E1%84%80%E1%85%A8%E1%84%8B%E1%85%A3%E1%86%A8%E1%84%92%E1%85%A1%E1%86%AB-%E1%84%80%E1%85%A5%E1%86%AB-%E1%84%8B%E1%85%A5%E1%86%B7%E1%84%8E%E1%85%A5%E1%86%BC%E1%84%82%E1%85%A1%E1%86%AB-%E1%84%8B%E1%85%B5%E1%86%AF/blt4c3278efe3f181b8">과르디올라가 극찬한 ‘최고의 영입’...“그와 계약한 건 엄청난 일”</a></h6>
 
               </div>
             </div>
             <!-- Example Social Card-->
             <div class="card mb-3">
-              <a href="#">
-                <img class="card-img-top img-fluid w-100" src="https://unsplash.it/700/450?image=281" alt="" />
+              <a href="https://www.goal.com/kr/%EB%AA%A9%EB%A1%9D/%E1%84%86%E1%85%A6%E1%84%89%E1%85%B5-%E1%84%92%E1%85%A9%E1%86%AF%E1%84%85%E1%85%A1%E1%86%AB-%E1%84%87%E1%85%A6%E1%86%AF%E1%84%85%E1%85%B5%E1%86%BC%E1%84%8B%E1%85%A5%E1%86%B7-%E1%84%80%E1%85%B3%E1%84%85%E1%85%B5%E1%84%80%E1%85%A9-%E1%84%8B%E1%85%B3%E1%86%B7%E1%84%87%E1%85%A1%E1%84%91%E1%85%A6%E1%84%81%E1%85%A1%E1%84%8C%E1%85%B5--goal50-2023-%E1%84%83%E1%85%A2%E1%84%80%E1%85%A9%E1%86%BC%E1%84%80%E1%85%A2/blt42bcb4d77bbaa046">
+                <img class="card-img-top img-fluid w-100" src="./img/news/맨시뉴스3.webp" alt="" />
               </a>
               <div class="card-body">
                 <h6 class="card-title mb-1">
-                  <a href="#">Jeffery Wellings</a>
+                  <a href="https://www.goal.com/kr/%EB%AA%A9%EB%A1%9D/%E1%84%86%E1%85%A6%E1%84%89%E1%85%B5-%E1%84%92%E1%85%A9%E1%86%AF%E1%84%85%E1%85%A1%E1%86%AB-%E1%84%87%E1%85%A6%E1%86%AF%E1%84%85%E1%85%B5%E1%86%BC%E1%84%8B%E1%85%A5%E1%86%B7-%E1%84%80%E1%85%B3%E1%84%85%E1%85%B5%E1%84%80%E1%85%A9-%E1%84%8B%E1%85%B3%E1%86%B7%E1%84%87%E1%85%A1%E1%84%91%E1%85%A6%E1%84%81%E1%85%A1%E1%84%8C%E1%85%B5--goal50-2023-%E1%84%83%E1%85%A2%E1%84%80%E1%85%A9%E1%86%BC%E1%84%80%E1%85%A2/blt42bcb4d77bbaa046">메시, 홀란, 벨링엄, 그리고 음바페까지... GOAL50 2023 대공개</a>
                 </h6>
               </div>
             </div>
             <!-- Example Social Card-->
             <div class="card mb-3">
-              <a href="#">
-                <img class="card-img-top img-fluid w-100" src="https://unsplash.it/700/450?image=185" alt="" />
+              <a href="https://www.goal.com/kr/%EB%89%B4%EC%8A%A4/%E1%84%92%E1%85%A1%E1%84%91%E1%85%B5%E1%86%AF-%E1%84%8C%E1%85%AE%E1%86%BC%E1%84%8B%E1%85%AD%E1%84%92%E1%85%A1%E1%86%AB-%E1%84%8B%E1%85%B5%E1%86%AF%E1%84%8C%E1%85%A5%E1%86%AB-%E1%84%8B%E1%85%A1%E1%87%81%E1%84%83%E1%85%AE%E1%84%80%E1%85%A9-%E1%84%87%E1%85%AE%E1%84%89%E1%85%A1%E1%86%BC--%E1%84%86%E1%85%A2%E1%86%AB%E1%84%8E%E1%85%A6%E1%84%89%E1%85%B3%E1%84%90%E1%85%A5-%E1%84%89%E1%85%B5%E1%84%90%E1%85%B5-%E1%84%8E%E1%85%A9%E1%84%87%E1%85%B5%E1%84%89%E1%85%A1%E1%86%BC-%E1%84%80%E1%85%A5%E1%86%AF%E1%84%85%E1%85%A7%E1%86%BB%E1%84%83%E1%85%A1/bltb5a97d93db574e30">
+                <img class="card-img-top img-fluid w-100" src="./img/news/맨시뉴스4.webp" alt="" />
               </a>
               <div class="card-body">
                 <h6 class="card-title mb-1">
-                  <a href="#">David Miller</a>
+                  <a href="https://www.goal.com/kr/%EB%89%B4%EC%8A%A4/%E1%84%92%E1%85%A1%E1%84%91%E1%85%B5%E1%86%AF-%E1%84%8C%E1%85%AE%E1%86%BC%E1%84%8B%E1%85%AD%E1%84%92%E1%85%A1%E1%86%AB-%E1%84%8B%E1%85%B5%E1%86%AF%E1%84%8C%E1%85%A5%E1%86%AB-%E1%84%8B%E1%85%A1%E1%87%81%E1%84%83%E1%85%AE%E1%84%80%E1%85%A9-%E1%84%87%E1%85%AE%E1%84%89%E1%85%A1%E1%86%BC--%E1%84%86%E1%85%A2%E1%86%AB%E1%84%8E%E1%85%A6%E1%84%89%E1%85%B3%E1%84%90%E1%85%A5-%E1%84%89%E1%85%B5%E1%84%90%E1%85%B5-%E1%84%8E%E1%85%A9%E1%84%87%E1%85%B5%E1%84%89%E1%85%A1%E1%86%BC-%E1%84%80%E1%85%A5%E1%86%AF%E1%84%85%E1%85%A7%E1%86%BB%E1%84%83%E1%85%A1/bltb5a97d93db574e30">하필 중요한 일전 앞두고 부상…맨체스터 시티 ‘초비상’ 걸렸다</a>
                 </h6>
 
               </div>
@@ -266,8 +266,8 @@
         <div class="col-lg-4">
           <!-- Example Pie Chart Card *원그래프로 해당팀의 가장 최근 게임에서 베팅이 어디에 몰리는지-->
           <div class="card mb-3">
-            <div class="card-header">
-              <i class="fa fa-pie-chart"></i> Pie Chart Example</div>
+            <div class="card-header" id="piechardhead">
+              <i class="fa fa-warning"></i> 파울</div>
             <div class="card-body">
               <canvas id="myPieChart" width="100%" height="100"></canvas>
             </div>
@@ -276,38 +276,39 @@
           <!-- Example Notifications Card-->
           <div class="card mb-3">
             <div class="card-header">
-              <i class="fa fa-bell-o"></i> Feed Example</div>
+              <i class="fa fa-bell-o" id="feedexp"></i> 선수 명단</div>
             <div class="list-group list-group-flush small">
               <a class="list-group-item list-group-item-action" href="#">
                 <div class="media">
-                  <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/45x45" alt="">
+                  <img class="d-flex mr-3 rounded-circle" src="./img/pp/맨시더브라.webp" alt="">
                   <div class="media-body">
-                    <strong>David Miller</strong>posted a new article to
-                    <strong>David Miller Website</strong>.
-                    <div class="text-muted smaller">Today at 5:43 PM - 5m ago</div>
+                    <strong>Kevin De Bruyne</strong> <br>
+                    Captian <br><br>
+                    <div class="text-muted smaller">공격형 미드필더, 중앙 미드필더</div>
                   </div>
                 </div>
               </a>
               <a class="list-group-item list-group-item-action" href="#">
                 <div class="media">
-                  <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/45x45" alt="">
+                  <img class="d-flex mr-3 rounded-circle" src="./img/pp/맨시워커.webp" alt="">
                   <div class="media-body">
-                    <strong>Samantha King</strong>sent you a new message!
-                    <div class="text-muted smaller">Today at 4:37 PM - 1hr ago</div>
+                    <strong>Kyle Walker</strong> <br>
+                    Vice Captain <br><br>
+                    <div class="text-muted smaller">라이트백, 센터백</div>
                   </div>
                 </div>
               </a>
               <a class="list-group-item list-group-item-action" href="#">
                 <div class="media">
-                  <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/45x45" alt="">
+                  <img class="d-flex mr-3 rounded-circle" src="./img/pp/맨시홀란.webp" alt="">
                   <div class="media-body">
-                    <strong>Jeffery Wellings</strong>added a new photo to the album
-                    <strong>Beach</strong>.
-                    <div class="text-muted smaller">Today at 4:31 PM - 1hr ago</div>
+                    <strong>Erling Haaland</strong> <br>
+                    player <br><br>
+                    <div class="text-muted smaller">스트라이커</div>
                   </div>
                 </div>
               </a>
-              <a class="list-group-item list-group-item-action" href="#">
+              <!-- <a class="list-group-item list-group-item-action" href="#">
                 <div class="media">
                   <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/45x45" alt="">
                   <div class="media-body">
@@ -318,8 +319,8 @@
                     <div class="text-muted smaller">Today at 3:54 PM - 2hrs ago</div>
                   </div>
                 </div>
-              </a>
-              <a class="list-group-item list-group-item-action" href="#">View all activity...</a>
+              </a> -->
+              <a class="list-group-item list-group-item-action" href="https://www.premierleague.com/clubs/21/Tottenham-Hotspur/squad?se=578">View all player...</a>
             </div>
             <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
           </div>
@@ -330,7 +331,7 @@
     <footer class="sticky-footer">
       <div class="container">
         <div class="text-center">
-          <small>Copyright © Your Website 2018</small>
+          <small>Premier League</small>
         </div>
       </div>
     </footer>
@@ -346,7 +347,7 @@
 <script src='https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.16/js/dataTables.bootstrap4.js'></script><script  src="JS\match.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.16/js/dataTables.bootstrap4.js'></script><script  src="./JS/team.js"></script>
 
 </body>
 </html>
